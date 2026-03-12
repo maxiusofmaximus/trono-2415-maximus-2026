@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRONO 2415 · Maximus Entertainment 2026</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-brand">
+        <img src="./assets/logo-maximus-2026.svg" alt="Maximus Entertainment 2026" class="brand-logo" />
+        <div>
+          <p class="kicker">Maximus Entertainment 2026</p>
+          <h1>TRONO 2415</h1>
+          <p class="subtitle">Guardianes del Bien Mayor</p>
+        </div>
+      </div>
+      <p class="hero-text">
+        Proyecto narrativo y sistémico de sigilo social no letal: prevención, protección y responsabilidad moral en escenarios de alta tensión.
+      </p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Perfil del creador</h2>
+        <p><strong>Nombre:</strong> Maxius Of Maximus</p>
+        <p>
+          Soy un apasionado amante de los videojuegos y de la tecnología, y estoy emocionado de inspirar a muchos más jugadores en el mundo.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Arquitectura MVC del sitio</h2>
+        <div class="mermaid">
+          flowchart LR
+            M[Model<br/>projectModel.js] --> C[Controller<br/>projectController.js]
+            C --> V1[View<br/>contentView.js]
+            C --> V2[View<br/>excalidrawView.js]
+            C --> V3[View<br/>demoView.js]
+            V1 --> UI[Documentación]
+            V2 --> UI
+            V3 --> UI
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Documentación del proyecto</h2>
+        <div id="documents-container" class="documents-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Diagramas Excalidraw</h2>
+        <div class="diagram-layout">
+          <article>
+            <h3>Pitch + Arquitectura UI</h3>
+            <canvas id="diagram-canvas-main" width="900" height="520"></canvas>
+          </article>
+          <article>
+            <h3>Concepto base de 5 pilares</h3>
+            <canvas id="diagram-canvas-concept" width="900" height="520"></canvas>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Demo 2D en Three.js</h2>
+        <p>Simulación top-down de infiltración no letal: recolecta nodos civiles y evita zonas de alerta.</p>
+        <div id="three-demo"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Contacto</h2>
+        <p><strong>Cel:</strong> 3006123784</p>
+        <p><strong>Email:</strong> pedroabelardo1999@gmail.com</p>
+      </section>
+    </main>
+
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true, theme: "default" });
+    </script>
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>

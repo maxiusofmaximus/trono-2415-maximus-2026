@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">Maximus Entertainment 2026</title>
+  <desc id="desc">Logotipo con escudo, corona y monograma M para Maximus Entertainment 2026.</desc>
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#50e1ff"/>
+      <stop offset="100%" stop-color="#11477d"/>
+    </linearGradient>
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd36a"/>
+      <stop offset="100%" stop-color="#d28f16"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="40" fill="#070b14"/>
+  <path d="M110 28L178 56V115C178 160 146 189 110 203C74 189 42 160 42 115V56L110 28Z" fill="url(#shieldGrad)" stroke="#82ddff" stroke-width="4"/>
+  <path d="M60 66L81 47L110 72L139 47L160 66V87H60Z" fill="url(#crownGrad)" stroke="#ffe29a" stroke-width="3"/>
+  <circle cx="81" cy="50" r="5" fill="#fff3c4"/>
+  <circle cx="110" cy="48" r="5" fill="#fff3c4"/>
+  <circle cx="139" cy="50" r="5" fill="#fff3c4"/>
+  <path d="M70 152V94L96 130L110 112L124 130L150 94V152H132V128L110 158L88 128V152Z" fill="#eaf7ff"/>
+  <text x="110" y="185" text-anchor="middle" font-size="16" font-family="Segoe UI, Arial, sans-serif" fill="#d7ecff">MM · 2026</text>
+</svg>
