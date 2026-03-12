@@ -18,5 +18,4 @@
   <circle cx="110" cy="48" r="5" fill="#fff3c4"/>
   <circle cx="139" cy="50" r="5" fill="#fff3c4"/>
   <path d="M70 152V94L96 130L110 112L124 130L150 94V152H132V128L110 158L88 128V152Z" fill="#eaf7ff"/>
-  <text x="110" y="185" text-anchor="middle" font-size="16" font-family="Segoe UI, Arial, sans-serif" fill="#d7ecff">MM · 2026</text>
 </svg>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,27 +11,32 @@
       <div class="hero-brand">
         <img src="./assets/logo-maximus-2026.svg" alt="Maximus Entertainment 2026" class="brand-logo" />
         <div>
-          <p class="kicker">Maximus Entertainment 2026</p>
+          <p class="kicker" data-i18n="brand.name">Maximus Entertainment 2026</p>
           <h1>TRONO 2415</h1>
-          <p class="subtitle">Guardianes del Bien Mayor</p>
+          <p class="subtitle" data-i18n="hero.subtitle">Break the past, shatter the unbreakable</p>
         </div>
       </div>
-      <p class="hero-text">
-        Proyecto narrativo y sistémico de sigilo social no letal: prevención, protección y responsabilidad moral en escenarios de alta tensión.
-      </p>
+      <p class="hero-text" data-i18n="hero.text">A narrative systemic project focused on non-lethal social stealth, prevention, and moral responsibility under high-pressure historical crises.</p>
+      <div class="hero-actions">
+        <label class="lang-wrap">
+          <span data-i18n="ui.language">Language</span>
+          <select id="language-select" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
+        </label>
+      </div>
     </header>
 
     <main>
       <section class="panel">
-        <h2>Perfil del creador</h2>
-        <p><strong>Nombre:</strong> Maxius Of Maximus</p>
-        <p>
-          Soy un apasionado amante de los videojuegos y de la tecnología, y estoy emocionado de inspirar a muchos más jugadores en el mundo.
-        </p>
+        <h2 data-i18n="profile.title">Creator Profile</h2>
+        <p><strong data-i18n="profile.nameLabel">Name:</strong> Maxius Of Maximus</p>
+        <p data-i18n="profile.bio">I am a passionate lover of videogames and technology, and I am excited to inspire many more players around the world.</p>
       </section>
 
       <section class="panel">
-        <h2>Arquitectura MVC del sitio</h2>
+        <h2 data-i18n="mvc.title">MVC Site Architecture</h2>
         <div class="mermaid">
           flowchart LR
             M[Model<br/>projectModel.js] --> C[Controller<br/>projectController.js]
@@ -45,33 +50,53 @@
       </section>
 
       <section class="panel">
-        <h2>Documentación del proyecto</h2>
+        <h2 data-i18n="docs.title">Project Documentation</h2>
         <div id="documents-container" class="documents-grid"></div>
       </section>
 
       <section class="panel">
-        <h2>Diagramas Excalidraw</h2>
+        <h2 data-i18n="diagrams.title">Excalidraw Diagrams</h2>
         <div class="diagram-layout">
           <article>
-            <h3>Pitch + Arquitectura UI</h3>
+            <h3 data-i18n="diagrams.pitch">Pitch + UI Architecture</h3>
             <canvas id="diagram-canvas-main" width="900" height="520"></canvas>
           </article>
           <article>
-            <h3>Concepto base de 5 pilares</h3>
+            <h3 data-i18n="diagrams.concept">5-Pillar Core Concept</h3>
             <canvas id="diagram-canvas-concept" width="900" height="520"></canvas>
           </article>
         </div>
       </section>
 
       <section class="panel">
-        <h2>Demo 2D en Three.js</h2>
-        <p>Simulación top-down de infiltración no letal: recolecta nodos civiles y evita zonas de alerta.</p>
+        <h2 data-i18n="demo.title">2D Lore Intro Demo</h2>
+        <p data-i18n="demo.description">A cinematic prologue: a fallen soldier crosses the threshold, meets the founders, and receives the first mission call.</p>
+        <p data-i18n="demo.controls">Controls: use the on-screen choices to accept or refuse the call and pick your first mission.</p>
         <div id="three-demo"></div>
       </section>
 
       <section class="panel">
-        <h2>Contacto</h2>
-        <p><strong>Cel:</strong> 3006123784</p>
+        <h2 data-i18n="payments.title">Support & Payments</h2>
+        <div class="payment-grid">
+          <a class="pay-card" href="https://www.paypal.com/paypalme/maxlivehotmailes" target="_blank" rel="noreferrer">
+            <span class="pay-name">PayPal</span>
+            <span class="pay-detail" data-i18n="payments.paypal">Donate directly to: maxlive@hotmail.es</span>
+          </a>
+          <a class="pay-card" href="https://www.patreon.com/create" target="_blank" rel="noreferrer">
+            <span class="pay-name">Patreon</span>
+            <span class="pay-detail" data-i18n="payments.patreon">Create or connect your creator page</span>
+          </a>
+          <a class="pay-card" href="https://www.mercadopago.com.co/" target="_blank" rel="noreferrer">
+            <span class="pay-name">Mercado Pago</span>
+            <span class="pay-detail" data-i18n="payments.local">Popular option for Colombia</span>
+          </a>
+        </div>
+        <p data-i18n="payments.note">For account security, account setup must be completed in your own browser session.</p>
+      </section>
+
+      <section class="panel">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <p><strong data-i18n="contact.phoneLabel">Phone:</strong> 3006123784</p>
         <p><strong>Email:</strong> pedroabelardo1999@gmail.com</p>
       </section>
     </main>
